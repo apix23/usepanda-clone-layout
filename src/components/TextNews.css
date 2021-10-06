@@ -1,0 +1,12 @@
+.text-news {
+  background-color: rebeccapurple;
+  display: flex;
+
+  padding-top: 1rem;
+}
+
+.text-news img {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
+}
