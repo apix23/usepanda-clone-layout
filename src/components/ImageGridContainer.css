@@ -1,0 +1,20 @@
+.image-grid-container {
+  min-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.image-grid-container img {
+  min-width: 300px;
+  flex: 1 1 auto;
+  width: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .image-grid-container img {
+    width: 20%;
+  }
+}

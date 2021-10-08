@@ -1,5 +1,34 @@
 .news-container {
-  max-width: 426px;
-  background-color: lightblue;
-  border-right: 1px solid rgb(216, 216, 216);
+  height: inherit;
+  width: var(--news-container-size);
+  overflow-y: scroll;
+  margin-right: 16px;
+  /* border-right: 1px solid rgb(216, 216, 216); */
+}
+
+.cockpit .news-container {
+  height: auto;
+}
+
+.news-container > * {
+  padding: 0.5rem;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.news-container .type-selector {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.news-container select {
+  border: none;
+  background: #ebeff0;
+  height: 30px;
+  width: 252px;
+}
+
+.news-container > img {
+  margin-bottom: 0.25rem;
 }

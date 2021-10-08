@@ -1,57 +1,19 @@
+:root {
+  --news-container-size: 400px;
+  --feed-container-size: 245px;
+  --lightgray: #f4f8fb;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--lightgray);
+}
 /* 
 .App {
   display: flex;
 } */
-
-.layout-container {
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.layout-container .feed-container {
-  display: none;
-}
-
-.layout-container .main-content {
-  display: none;
-}
-
-.the-reader {
-  grid-template: 1fr / 1fr 4fr 5fr;
-  gap: 0;
-  padding: 0;
-}
-
-.the-reader .feed-container {
-  display: block;
-}
-
-.the-reader .main-content {
-  display: block;
-}
-
-.the-reader .feed-deck {
-  grid-template: 1fr / 1fr 1fr 1fr;
-}
-
-.el-classico {
-  grid-template: 1fr / 4fr 20fr;
-}
-
-.front-hands {
-  grid-template: 1fr / 1fr 2fr 1fr;
-}
-
-.news-freak {
-  grid-template: 1fr / repeat(4, 1fr);
-}
-
-.left-handed {
-  grid-template: 1fr / 20fr 4fr;
-}

@@ -1,0 +1,50 @@
+.layout-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.the-reader {
+  grid-template: 1fr / var(--feed-container-size) var(--news-container-size) 5fr;
+  gap: 0;
+  padding: 0;
+}
+
+.the-reader > * {
+  border-right: 1px solid var(--lightgray);
+}
+
+.feed-deck {
+  grid-template: 1fr / repeat(10, var(--news-container-size));
+  overflow-x: scroll;
+}
+
+.el-classico {
+  grid-template: 1fr / var(--news-container-size) 1fr;
+}
+
+.front-hands {
+  grid-template: 1fr / var(--news-container-size) 1fr var(--news-container-size);
+}
+
+.news-freak {
+  grid-template: 1fr / repeat(auto-fill, var(--news-container-size));
+  min-width: 960px;
+}
+
+.left-handed {
+  grid-template: 1fr / 1fr var(--news-container-size);
+}
+
+.cross-eyed {
+  grid-template: 1fr / 1fr 1fr;
+}
+
+.cockpit {
+  grid-template: repeat(2, 50%) / repeat(auto-fill, var(--news-container-size));
+  min-width: 960px;
+}
