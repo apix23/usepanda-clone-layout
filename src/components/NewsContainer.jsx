@@ -1,11 +1,15 @@
 import React from "react";
 import TextNews from "./TextNews";
-import "./NewsContainer.css"
+import "./NewsContainer.css";
 
 const NewsContainer = () => {
   return (
     <div className="news-container">
-      <TextNews />
+      {Array(9)
+        .fill("")
+        .map((_) => (
+          <TextNews />
+        ))}
     </div>
   );
 };
